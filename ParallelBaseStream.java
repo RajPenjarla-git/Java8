@@ -43,5 +43,9 @@ public class ParallelBaseStream {
 		intStream = Stream.of(13,14,15,16,17,18);
 		Integer[] array = intStream.toArray(Integer[]::new);
 		System.out.println(Arrays.toString(array));
+		
+		//Stream count()
+		intStream = Stream.of(19,20,21,22,23,24);
+		System.out.println("Count no. of elements in the Stream: "+ intStream.count());
 	}
 }
